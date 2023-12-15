@@ -4,8 +4,7 @@ FROM nginx
 # 设置工作目录
 WORKDIR /usr/share/nginx/html/
 
-# 切换用户，也就是后续指令的执行身份。这里将用户切换为 root，也
-就是超级用户，拥有最高的权限。
+# 切换用户，也就是后续指令的执行身份。这里将用户切换为 root，也就是超级用户，拥有最高的权限。
 USER root
 
 # 将本地的 ./docker/nginx.conf 文件复制到镜像中的
